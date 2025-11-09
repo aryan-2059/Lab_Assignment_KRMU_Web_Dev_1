@@ -1,0 +1,127 @@
+<!-- Build a one-page portfolio website using semantic HTML tags such as <header>, <nav>, <section>, and <footer>, featuring distinct sections for About, Projects, and Contact. The site should include a hero section with a title and short introduction, along with a profile image in the About section that has appropriate alt text. List 2–3 projects using <ul> or <article> elements, and present your technical skills or tools in a well-structured <table>. Add a functional contact form with fields for name, email, and message, ensuring the use of label, required, and placeholder attributes for usability. Include internal navigation links for smooth movement between sections and a “Skip to main content” link to improve accessibility. Make sure all links are functional and clearly labeled, and structure your HTML cleanly to allow for easy CSS styling in future enhancements. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Aryan Solanki</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Aryan Solanki's Portfolio</h1>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hero">Welcome</a></li>
+                    <li><a href="#skills">Skill</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero">
+                <h2>Welcome to My Portfolio</h2>
+                
+            </section>
+
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="/Assignments/passprt.jpeg" alt="Aryan Solanki's picture" width="310" height="250">
+                <p>Hey there! I'm Aryan, currently pursuing a BTech with specialization in Artificial Intelligence and Machine Learning. I aim at combining strong
+                    coding fundamentals with creative problem-solving to take up challenges in tech.
+                    To the table, I bring 2 years' of hands-on experience each in Java, Python, and MySQL, having built a solid foundation in logic and algorithmic thinking through school framework, courses, projects and numerous coding exercises.
+                    Alongside these languages, I have explored JavaScript and built some projects, aimed at pushing my skills further down the tech path. 
+                    Driven by a genuine interest in the field of technology, I hope to someday create a machine that doesn't just solve complex problems, but also figures out why code chooses to misbehave sometimes.
+                    If you're open to collaborate, exchange ideas, or just connect with someone enthusiastic about tech and more, feel free to reach out.
+                </p>
+                <hr>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <article>
+                            <h3>Dino Game</h3>
+                            <p>Chrome's Dino Game</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>HTML website</h3>
+                            <p>An interactive website made and styled with the help of HTML and CSS using transitions and hovers.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Space ship Game</h3>
+                            <p>An intercative game using js where spacecraft avoids obstacles with live score</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML/CSS</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>MySQL</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+       
+
+        
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                    
+                    <br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="abc123@example.com" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Aryan Solanki. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
